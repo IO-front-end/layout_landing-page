@@ -1,15 +1,17 @@
 // #region page
 .page {
-  font-family:'Poppins', sans-serif;
+  font-family: Poppins, sans-serif;
   color: white;
   font-size: 16px;
   line-height: 140%;
 
   scroll-behavior: smooth;
 }
+
 .page__body {
   margin: 0;
 }
+
 .page__menu {
   position: fixed;
   top: 0;
@@ -19,10 +21,12 @@
   opacity: 0;
   pointer-events: none;
 }
+
 .page__menu:target{
   opacity: 1;
   pointer-events: all;
 }
+
 // #endregion
 // #region header
 .header{
@@ -35,6 +39,7 @@
   display: flex;
   flex-direction: column;
 }
+
 @media (max-width: 768px){
   .header{
     background-position: 100% center;
@@ -49,9 +54,10 @@
   padding-bottom: 80px;
   width: 100%;
 }
+
 .header__title{
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family:Poppins, sans-serif;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.1;
@@ -59,20 +65,25 @@
   color: #fff;
   margin: 0;
 }
+
 // #endregion
 // #region menu
+
 .top-bar {
   padding:24px 20px;
   display: flex;
   justify-content: space-between;
 }
+
 .top-bar__icons{
   display: flex;
   gap: 24px;
 }
+
 .top-bar__logo {
   display: flex;
 }
+
 .menu{
   box-sizing: border-box;
 
@@ -81,15 +92,19 @@
   font-weight: 700;
   text-transform: uppercase;
 }
+
 .menu__top {
   margin-bottom: 32px;
 }
+
 .menu__nav {
   margin-bottom: 40px;
 }
+
 .menu__content {
   padding-inline: 20px;
 }
+
 .menu__phone-number {
   display: block;
   margin-bottom: 16px;
@@ -99,6 +114,7 @@
   color: #1D1D1D;
   text-decoration: none;
 }
+
 .menu__call-to-order {
   display: block;
   width: fit-content;
@@ -111,8 +127,10 @@
   color: #1D1D1D;
   text-decoration: none;
 }
+
 // #endregion
 // #region nav
+
 .nav__link {
   color: #1D1D1D;
   text-decoration: none;
@@ -120,6 +138,7 @@
   line-height: 22px;
   letter-spacing: 2px;
 }
+
 .nav__list {
   margin: 0;
   padding: 0;
@@ -128,6 +147,7 @@
   flex-direction: column;
   gap: 32px;
 }
+
 // #endregion
 // #region icon
 .icon{
@@ -135,6 +155,7 @@
  height: 24px;
  width: 24px;
 }
+
 .icon--phone{
   background-image: url(../../icons/Icon_Phone.png);
 }
@@ -142,18 +163,18 @@
 .icon--menu {
   background-image: url(../../icons/Icon-Burger-menu.png);
 }
+
 .icon--close{
   background-image: url(../../icons/Icon-Close.png);
 }
+
 .logo{
  height: 38px;
  width: auto;
  display: block;
 }
+
 // #endregion
 // #region footer
-.footer{
 
-}
 // #endregion
-
