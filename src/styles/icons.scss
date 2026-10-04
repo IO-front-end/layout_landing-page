@@ -2,22 +2,31 @@
   display: block;
   height: 24px;
   width: 24px;
-}
+  background-size: cover;
+  transition: transform $effectDuration;
 
-.icon--phone {
-  background-image: url(../../icons/Icon_Phone.png);
-}
+  &:hover {
+    transform: scale(1.2);
+  }
 
-.icon--menu {
-  background-image: url(../../icons/Icon-Burger-menu.png);
-}
+  @include on-tablet {
+    height: 32px;
+    width: 32px;
+  }
 
-.icon--close {
-  background-image: url(../../icons/Icon-Close.png);
-}
+  &--phone {
+    background-image: url(../../icons/icon-phone.svg);
+  }
 
-.logo {
-  height: 38px;
-  width: auto;
-  display: block;
+  &--menu {
+    background-image: url(../../icons/icon-burger-menu.svg);
+
+    &:hover {
+      background-image: url(../../icons/icon-burger-menu-hover.svg);
+    }
+  }
+
+  &--close {
+    background-image: url(../../icons/icon-close.svg);
+  }
 }

@@ -1,21 +1,37 @@
-.compare__products {
-  @include page-grid;
+.compare-bikes {
+  margin: 0 auto;
 
-  row-gap: 40px;
+  @include section-width;
 
-  &__product {
-    grid-column: 1 / -1;
+  &__products {
+    display: grid;
+    row-gap: 40px;
 
     @include on-tablet {
-      grid-column: 2 / -2;
+      justify-items: center;
     }
 
     @include on-desktop {
-      grid-column: span 4;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 24px;
+      justify-items: stretch;
     }
   }
 }
 
 .product {
-  width: 100%;
+  &__photo {
+    display: block;
+    width: 100%;
+    transition: transform $effectDuration ease;
+  }
+
+  &__link {
+    display: block;
+    overflow: hidden;
+
+    &:hover .product__photo {
+      transform: scale(1.05);
+    }
+  }
 }
